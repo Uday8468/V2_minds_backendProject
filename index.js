@@ -19,7 +19,7 @@ const initializeDBAndServer = async () => {
         db = await open({
             filename: dbPath,
             driver: sqlite3.Database,
-            mode: sqlite3.OPEN_READWRITE
+            // mode: sqlite3.OPEN_READWRITE
         });
 
         app.listen(5500, () => {
